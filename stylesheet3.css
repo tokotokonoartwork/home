@@ -84,67 +84,29 @@ main {
   background-color: rgb(249, 249, 249);
 }
 
-#works {
-  width: 80%;
+main .container {
+  width: 90%;
   margin: auto;
 }
 
 .sec-title {
-  margin-top: 120px;
+  margin-top: 77px;
   margin-bottom: 30px;
+  position: relative;
 }
 
 .sec-title p {
   font-size: 13px;
 }
 
-.works-content {
-  margin-bottom: 30px;
-  position: relative;
+.introduction {
+  display: flex;
 }
 
-
-.works-content img {
-  padding: 25px;
-  width: 25vw;
-  height: 25vw;
+#tokotoko-picture {
+  width: 40%;
 }
 
-
-
-#works .btn {
-  color: black;
-  background-color: white;
-  width: 150px;
-  padding: 15px;
-  border-radius: 100vh;
-  border: 1px solid black;
-  display: inline-block;
-  margin-bottom: 100px;
-}
-
-#works a {
-  line-height: 30px;
-}
-
-
-
-
-@media(max-width: 768px) {
-
-  #works {
-    width: 100%;
-    margin: 0;
-  }
-
-  .works-content img {
-    width: 90vw;
-    height: 90vw;
-    padding: 0;
-    margin-bottom: 50px;
-  }
-
-  .works-content img:nth-child(4),.works-content img:nth-child(5),.works-content img:nth-child(6) {
-    display: none;
-  }
+.introduce-content {
+  width: 60%;
 }
