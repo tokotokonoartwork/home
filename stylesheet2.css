@@ -67,7 +67,7 @@ header .top-bar ul {
 .menu-bar {
   background-color: white;
   width: 100%;
-  line-height: 70px;
+  line-height: 50px;
   margin: auto;
   text-align: center;
   margin-top: 13px;
@@ -82,84 +82,72 @@ main {
   background-color: rgb(249, 249, 249);
 }
 
-#works {
-  width: 80%;
+main .container {
+  width: 90%;
   margin: auto;
 }
-
-#top-illust {
-  width: 100%;
-  position: relative;
-  height: 700px;
-}
-
-/*#kanahei-logo {
-  filter: drop-shadow(5px 5px 10px black);
-  position: absolute;
-  width: 200px;
-  top: 200px;
-  left: 0;
-  right: 0;
-  margin: auto;
-}*/
 
 .sec-title {
-  margin-top: 120px;
+  margin-top: 77px;
   margin-bottom: 30px;
+  position: relative;
 }
 
 .sec-title p {
   font-size: 13px;
 }
 
-.works-content {
-  margin-bottom: 30px;
+.large-block {
+  display: flex;
+  flex-wrap: wrap;
   position: relative;
 }
-
-
-.works-content img {
-  padding: 25px;
-  width: 25vw;
-  height: 25vw;
-  border-radius: 10%;
+.small-block {
+  display: flex;
+  border-bottom: 1px solid gray;
+  padding-top: 8px;
+  padding-bottom: 20px;
+  width: 50%;
+  margin-bottom: 20px;
 }
 
-
-
-#works .btn {
-  color: black;
-  background-color: white;
-  width: 150px;
-  padding: 15px;
-  border-radius: 100vh;
-  border: 1px solid black;
-  display: inline-block;
-  margin-bottom: 100px;
+.small-block .image-part {
+  width: 50%;
 }
 
-#works a {
-  line-height: 30px;
+.small-block img {
+  width: 100%;
 }
 
-
-
+.explain-part {
+  width: 50%;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: left;
+}
 
 @media(max-width: 768px) {
-
-  #works {
+  .small-block {
     width: 100%;
-    margin: 0;
+  }
+}
+
+@media(max-width: 500px) {
+  .explain-part h3 {
+    font-size: 15px;
   }
 
-  .works-content img {
-    width: 90vw;
-    height: 90vw;
-    padding: 0;
-    margin-bottom: 50px;
+  .explain-part p {
+    font-size: 12px;
+  }
+}
+
+@media(max-width: 350px) {
+  .explain-part h3 {
+    font-size: 12px;
   }
 
-  .works-content img:nth-child(4),.works-content img:nth-child(5),.works-content img:nth-child(6) {
-    display: none;
+  .explain-part p {
+    font-size: 10px;
   }
 }
