@@ -64,6 +64,10 @@ header .top-bar ul {
   cursor: pointer;
 }
 
+header .top-bar a {
+  color: black;
+}
+
 .menu-bar {
   background-color: white;
   width: 100%;
