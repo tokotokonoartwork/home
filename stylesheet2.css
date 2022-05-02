@@ -40,27 +40,38 @@ header {
   z-index: 10;
   background-color: white;
   width: 100%;
-  height: 77px;
+}
+
+header .container {
+  height: 100%;
 }
 
 header .top-bar {
+  position: relative;
   width: 90%;
+  height: 100%;
   margin: auto;
   display: flex;
   justify-content: space-between;
 }
 
 header p {
-  
   width: 50%;
-  padding-top: 40px;
   text-align: left;
 }
 
+header img {
+  width: 20%;
+  height: 100%;
+  padding: 7px 0;
+}
+
 header .top-bar ul {
+  position: absolute;
+  top: 40%;
+  right: 0;
   font-size: 20px;
   line-height: 7px;
-  padding-top: 30px;
   cursor: pointer;
 }
 
