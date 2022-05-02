@@ -128,6 +128,19 @@ main {
 }
 
 
+@media(max-width: 900px) {
+
+  #works {
+    width: 90%;
+    margin: auto;
+  }
+
+  .works-content img {
+    padding: 25px;
+    width: 40vw;
+    height: 40vw;
+  }
+}
 
 
 @media(max-width: 768px) {
