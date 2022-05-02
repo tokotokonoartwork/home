@@ -19,9 +19,7 @@ p {
 }
 
 ul {
-  padding-inline-start: 0px;
   margin-block-start: 0em;
-  margin-block-end: 0em;
 }
 
 li {
@@ -35,7 +33,7 @@ h1 {
 
 header {
   position: fixed;
-  top: -100px;
+  top: -200px;
   left: 0;
   z-index: 10;
   background-color: white;
@@ -60,24 +58,37 @@ header .top-bar {
   justify-content: space-between;
 }
 
+header .right {
+  position: absolute;
+  top: 30%;
+  right: 0;
+  display: flex;
+}
+
+header i {
+  cursor: pointer;
+}
+
+header #insta {
+  font-size: 30px;
+}
+
 header p {
   width: 50%;
   text-align: left;
 }
 
 header img {
-  width: 20%;
+  width: 30%;
   height: 100%;
   padding: 7px 0;
 }
 
 header .top-bar ul {
-  position: absolute;
-  top: 40%;
-  right: 0;
   font-size: 20px;
-  line-height: 7px;
+  line-height: 8px;
   cursor: pointer;
+  margin-top: 8px;
 }
 
 header .top-bar a {
@@ -110,7 +121,7 @@ main {
 }
 
 .sec-title {
-  margin-top: 120px;
+  margin-top: 10vw;
   margin-bottom: 30px;
 }
 
@@ -147,8 +158,23 @@ main {
   line-height: 30px;
 }
 
+@media(max-width: 1024px) {
+
+}
+
 
 @media(max-width: 900px) {
+
+  header img {
+    width: 40%;
+    height: 100%;
+    padding: 7px 0;
+  }
+
+  #top-illust {
+    height: 120vw;
+  }
+
 
   #works {
     width: 90%;
@@ -166,7 +192,7 @@ main {
 @media(max-width: 768px) {
 
   header img {
-    width: 40%;
+    width: 60%;
     height: 100%;
     padding: 7px 0;
   }

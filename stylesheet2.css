@@ -19,9 +19,7 @@ p {
 }
 
 ul {
-  padding-inline-start: 0px;
   margin-block-start: 0em;
-  margin-block-end: 0em;
 }
 
 li {
@@ -40,6 +38,7 @@ header {
   z-index: 10;
   background-color: white;
   width: 100%;
+  height: 10vw;
 }
 
 header .container {
@@ -55,24 +54,37 @@ header .top-bar {
   justify-content: space-between;
 }
 
+header .right {
+  position: absolute;
+  top: 30%;
+  right: 0;
+  display: flex;
+}
+
+header i {
+  cursor: pointer;
+}
+
+header #insta {
+  font-size: 30px;
+}
+
 header p {
   width: 50%;
   text-align: left;
 }
 
 header img {
-  width: 20%;
+  width: 30%;
   height: 100%;
   padding: 7px 0;
 }
 
 header .top-bar ul {
-  position: absolute;
-  top: 40%;
-  right: 0;
   font-size: 20px;
-  line-height: 7px;
+  line-height: 8px;
   cursor: pointer;
+  margin-top: 8px;
 }
 
 header .top-bar a {
@@ -82,7 +94,7 @@ header .top-bar a {
 .menu-bar {
   background-color: white;
   width: 100%;
-  line-height: 50px;
+  line-height: 70px;
   text-align: center;
   display: none;
 }
@@ -101,7 +113,7 @@ main .container {
 }
 
 .sec-title {
-  margin-top: 77px;
+  margin-top: 10vw;
   margin-bottom: 30px;
   position: relative;
 }
@@ -140,6 +152,14 @@ main .container {
   text-align: left;
 }
 
+@media(max-width: 1024px) {
+  header img {
+    width: 40%;
+    height: 100%;
+    padding: 7px 0;
+  }
+}
+
 @media(max-width: 850px) {
   .explain-part h3 {
     font-size: 15px;
@@ -151,8 +171,23 @@ main .container {
 }
 
 @media(max-width: 768px) {
+
+  header {
+    height: 20vw;
+  }
+
+  header img {
+    width: 60%;
+    height: 100%;
+    padding: 7px 0;
+  }
+
   .small-block {
     width: 100%;
+  }
+
+  .sec-title {
+    margin-top: 20vw;
   }
 }
 
