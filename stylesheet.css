@@ -103,8 +103,14 @@ header .top-bar a {
   display: none;
 }
 
+
 .menu-bar a {
   color: black;
+  display: block;
+}
+
+.menu-bar a:hover {
+  background-color: rgb(245, 245, 245);
 }
 
 main {
@@ -113,6 +119,13 @@ main {
 
 #top-illust {
   width: 100%;
+  height: auto;
+}
+
+#top-s-illust {
+  width: 100%;
+  height: 100vh;
+  display: none;
 }
 
 #works {
@@ -125,8 +138,8 @@ main {
   margin-bottom: 30px;
 }
 
-.sec-title p {
-  font-size: 13px;
+.sec-title #works-logo {
+  width: 12%;
 }
 
 .works-content {
@@ -171,11 +184,6 @@ main {
     padding: 7px 0;
   }
 
-  #top-illust {
-    height: 120vw;
-  }
-
-
   #works {
     width: 90%;
     margin: auto;
@@ -195,6 +203,18 @@ main {
     width: 60%;
     height: 100%;
     padding: 7px 0;
+  }
+
+  #top-illust {
+    display: none;
+  }
+
+  #top-s-illust {
+    display: block;
+  }
+
+  .sec-title #works-logo {
+    width: 30%;
   }
 
   #works {

@@ -101,6 +101,11 @@ header .top-bar a {
 
 .menu-bar a {
   color: black;
+  display: block;
+}
+
+.menu-bar a:hover {
+  background-color: rgb(245, 245, 245);
 }
 
 main {

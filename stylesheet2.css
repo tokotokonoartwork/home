@@ -101,6 +101,11 @@ header .top-bar a {
 
 .menu-bar a {
   color: black;
+  display: block;
+}
+
+.menu-bar a:hover {
+  background-color: rgb(245, 245, 245);
 }
 
 main {
@@ -114,12 +119,13 @@ main .container {
 
 .sec-title {
   margin-top: 10vw;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   position: relative;
 }
 
-.sec-title p {
-  font-size: 13px;
+.sec-title #works-logo {
+  margin-top: 40px;
+  width: 12%;
 }
 
 .large-block {
@@ -180,6 +186,10 @@ main .container {
     width: 60%;
     height: 100%;
     padding: 7px 0;
+  }
+
+  .sec-title #works-logo {
+    width: 30%;
   }
 
   .small-block {
