@@ -5,7 +5,7 @@
 body {
   margin: 0;
   font-family: 'Kaisei Decol', serif;
-  background-color: white;
+  background-color: wheat;
   text-align: center;
 }
 
@@ -121,10 +121,6 @@ header .top-bar a {
 
 .menu-bar a:hover {
   background-color: rgb(182, 0, 0);
-}
-
-main {
-  background-color: wheat;
 }
 
 main .container {
